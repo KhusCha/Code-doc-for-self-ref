@@ -1,0 +1,28 @@
+package coding.ninja;
+
+import java.util.Scanner;
+
+public class CodingNinja {
+
+	
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		 Scanner s = new Scanner(System.in);
+			int n = s.nextInt();
+	       
+         if(n==0  || n<0){
+         System.out.println("Only +ve integral value greater than 0 accepted");
+         }
+			 
+		      
+			for(int i=1;i<=n;i++) {
+				
+				if(i%2!=0) {
+					System.out.println(i);
+				}
+				
+			}
+ }// main method close
+}// class close

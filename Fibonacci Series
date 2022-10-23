@@ -23,6 +23,7 @@ public class CodingNinja {
 			int n = s.nextInt();
 	        
 	       System.out.println(fibonacciSeries(n));
+	       
          
   }
  }

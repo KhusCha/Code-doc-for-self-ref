@@ -1,0 +1,40 @@
+package coding.ninja;
+
+import java.util.Scanner;
+
+public class CodingNinja {
+
+	
+	
+	public static void main(String[] args) {
+		
+		
+		 Scanner s = new Scanner(System.in);
+		 
+		 	try {
+			int n = s.nextInt();
+		 	
+		 	
+
+			int rem, rev=0;
+			
+			if(n==0|| n<0) {
+				System.out.println("n must be +ve non zero integer");
+			}
+			
+			while(n>0) {
+				
+				rem= n%10;
+				
+				rev = rev*10+rem;
+				
+				n= n/10;
+			}
+			
+			System.out.println(rev);
+		 	}catch(Exception e) {
+		 		e.printStackTrace();
+		 	}
+      
+   }
+ }

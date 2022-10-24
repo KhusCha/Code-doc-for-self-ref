@@ -1,0 +1,28 @@
+package coding.ninja;
+
+import java.util.Scanner;
+
+public class CodingNinja {
+
+	
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		 Scanner s = new Scanner(System.in);
+			int n = s.nextInt();
+	        double precision = 0.000001;
+	        double i;
+          
+          if(n==0|| n<0){
+          System.out.println("n must be a positive non-zero integer");
+          }
+			for(i = 1; (i*i*i) <= n; i++);{
+		      for( --i; (i*i*i) < n; i += precision);{
+		    	  System.out.println(i);
+		      }
+			}
+		      System.out.println("Cube root of the given number is "+i);
+          
+    }
+  }

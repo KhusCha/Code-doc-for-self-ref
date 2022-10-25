@@ -1,0 +1,32 @@
+package uni.codingNinja;
+
+
+import java.util.Scanner;
+public class CodingNinja {
+	
+	public static void main(String[] args) {
+		
+
+       Scanner s = new Scanner(System.in);
+		
+		int n = s.nextInt();
+		
+		int ans =0;
+		int placeValue =1;
+		
+		while(n!=0) {
+			
+			 
+			 int rem = n%10;
+			 
+			 ans = ans + placeValue*rem;
+			 
+			 placeValue = placeValue*2;
+			 n=n/10;
+		}
+			
+	       System.out.println(ans);
+        
+        
+	}
+}

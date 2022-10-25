@@ -1,0 +1,38 @@
+package uni.codingNinja;
+
+import java.util.Scanner;
+
+public class CodingNinja {
+	
+	public static void main(String[] args) {
+		// Write your code here
+        Scanner s = new Scanner(System.in);
+		
+		int n = s.nextInt();
+		
+		int c = s.nextInt();
+		
+		if(c==1) {
+			int sum = 0;
+			for(int i =1;i<=n;i++) {
+				
+				
+					sum=	sum+i;
+			}
+			System.out.println(sum);
+		}
+	       
+		if(c==2) {
+			int mul =1;
+			for(int i=1;i<=n;i++) {
+				mul = mul*i;
+			}
+			System.out.println(mul);
+		}
+	       
+	     if(c!=1 && c!=2) {
+	    	 System.out.println("-1");
+	     } 
+
+	}
+}

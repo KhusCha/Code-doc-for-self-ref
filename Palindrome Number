@@ -1,0 +1,45 @@
+package coding.ninja;
+
+import java.util.Scanner;
+
+public class CodingNinja {
+
+	
+	
+	public static void main(String[] args) {
+		
+		
+		 Scanner s = new Scanner(System.in);
+		 	int n = s.nextInt();
+		 	
+		 	int temp=n;
+
+			int rem, rev=0;
+		 	
+			
+
+			
+			if(temp==0|| temp<0) {
+				System.out.println("n must be +ve non zero integer");
+			}
+			
+			while(temp>0) {
+				
+				rem= temp%10;
+				
+				rev = rev*10+rem;
+				
+				temp= temp/10;
+			}
+			
+		
+		 	
+		 	
+		 	if(n==rev) {
+		 		System.out.println(n+"\t"+"is a Palindrome number");
+		 	}else {
+		 		System.out.println(n+"\t"+"is not a Palindrome number ");
+		 	}
+      
+   }
+  }

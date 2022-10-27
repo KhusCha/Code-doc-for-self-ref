@@ -1,0 +1,36 @@
+// Fahrenheit to Celcius Conversion Table using method/ function
+
+import java.util.Scanner;
+
+public class CodingNinja {
+
+			public static void printFahrenheitTable(int start, int end, int step) {
+		
+		 
+        int C1;
+
+	       int start1= start;
+	       int end1 = end;
+	       int step1 = step;
+
+	       while(start1<=end1 ) {
+
+	            C1=((5*(start1-32))/9);
+
+	         System.out.println(start1+"\t"+C1);
+
+	        start1=start1+step;
+	        		
+           }
+	}
+  
+  public static void main(String[] args) {
+		Scanner s = new Scanner(System.in);
+		int start = s.nextInt();
+		int end = s.nextInt();
+		int step = s.nextInt();
+		CodingNinja.printFahrenheitTable(start, end, step);
+	}
+
+  }
+}
